@@ -1,0 +1,85 @@
+.card-parent {
+  display: flex;
+}
+.card {
+  padding: 70px 0;
+  width: 30%;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  display: inline-block;
+}
+.left-in, .right-in {
+  display: inline-block;
+  box-sizing: border-box;
+}
+.left-in {
+  width: 70%;
+}
+.right-in {
+  width: 29%;
+  position: relative;
+}
+.actions-wrap {
+  padding-top: 50px;
+}
+.actions-wrap .item button {
+  background: #72C3DC;
+  border-radius: 3px;
+  border: 1px solid #72C3DC !important;
+  color: #fff;
+  font-size: 18px;
+  width: 140px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.actions-wrap .item {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.web, .mobile {
+  width: 100%;
+}
+.web .right-in {
+  vertical-align: top;
+}
+.mobile {
+  display: none;
+}
+.mobile .actions-wrap {
+  width: 100%;
+}
+.mobile .actions-wrap .item {
+  display: inline-block;
+  width: 50%;
+}
+.mobile .actions-wrap .item button {
+  width: 130px;
+}
+.card-in {
+  color: #000;
+  background: #efefef;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media only screen and (max-width: 500px) {
+  .web {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .web {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
